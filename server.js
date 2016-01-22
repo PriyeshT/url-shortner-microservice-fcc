@@ -5,6 +5,9 @@ var routes = require('./app/routes/index.js');
 
 var app = express();
 
+app.set('views','./app/views');
+app.set('view engine','jade');
+
 app.use('/public', express.static(process.cwd() + '/public'));
 
 
